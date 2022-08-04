@@ -1,0 +1,16 @@
+{
+  "products": [],
+  "serchs": [],
+  "user": [
+    {
+      "email": "pepe@mail.com",
+      "password": "pepe55$",
+      "id": 1
+    },
+    {
+      "email": "carla@mail.com",
+      "password": "carla55$",
+      "id": 2
+    }
+  ]
+}

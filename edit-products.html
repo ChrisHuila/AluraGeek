@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products-edit </title>
+    <link rel="preload" href="assets/css/normalize.css" as="style">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="assets/css/style.css" as="style">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="img/icon.png">
+    <!--  ICON BY <a href="https://lovepik.com/images/png-3d.html">3d Png vectors by Lovepik.com</a> -->
+</head>
+<body>
+    <header class="header container">  
+        <div class="header__main">
+            <h1><a href="products.html"><img hr class="header__logo" src="img/Logo.png" alt="Logo"></a></h1>
+            <form class="header__form" id="form__serch">
+                <div class="header__divInput">
+                    <input class="header__input" id="serch__term" type="text" placeholder="
+                    What do you want to search?">
+                    <div class="div__serch" >
+                        <button class="input__serch" id="input__serch" type="submit">
+                            <svg  xmlns="http://www.w3.org/2000/svg" class="header__icon icon icon-tabler icon-tabler-search" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <circle cx="10" cy="10" r="7" />
+                                <line x1="21" y1="21" x2="15" y2="15" />
+                            </svg>
+                        </button>   
+                    </div>
+                    
+                </div>
+            </form>
+        </div>   
+        <div class="header__login-div ">
+            <a class="button header__login-button header__administrator-button" href="products.html">Administrator Menu</a>
+        </div>        
+    </header>
+    <main class="main main__login">
+        <div class="login container">
+            <form class="product__form" id="login__form" method="post">
+                <fieldset class="contact__fildset">Edit Product</fieldset>
+                <div class="login__input-div ">
+                    <input class="login__input" id="login__image" name="login__image"  type="text" placeholder="Image URL" >
+                </div>
+
+                <div class="login__input-div">
+                    <select class="login__select" name="login__Categorie" id="login__Categorie">
+                        <option value="">Categorie</option>
+                        <option value="starwars">Star Wars</option>
+                        <option value="console">Console</option>
+                        <option value="various">Various</option>
+                    </select>          
+                </div>
+
+                <div class="login__input-div" >
+                    <input class="login__input" id="login__name" name="login__name" type="text" placeholder="Product Name">
+                </div>
+
+                <div class="login__input-div" >
+                    <input class="login__input" id="login__price" name="login__price"  type="text" placeholder="Product price">
+                </div>
+
+                <div class="login__input-div product__description-area">
+                    <textarea class="login__input product__description" name="login__description" id="login__description" cols="30" rows="10" placeholder="Insert the Product description"></textarea>
+                </div>
+                <input type="hidden" name="id" id="id" value="">
+
+                <div class="product__button-div">
+                    <input class="button product__button" type="submit" value="Save Changes">
+                </div>
+            </form>
+        </div>
+
+        <section class="contact">
+            <div class="contact__container container">
+                <div class="contact__div-img" >
+                    <img src="img/Logo.png" alt="logo">
+                </div>
+                
+    
+                <div class="contact__nav-div">
+                    <nav class="contact__nav">
+                        <a href="#">About Us</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Loyalty Program</a>
+                        <a href="#">Our Stores</a>
+                        <a href="#">I want to be a franchisee</a>
+                        <a href="#">Advertise Here</a>
+                    </nav>
+                </div>
+            
+                <form class="contact__form" id="contact" action="">
+                    <fieldset class="contact__fildset">Speak with us</fieldset>
+                    
+                    <div class="contact__form-div">
+                        <label class="contact__form-tag" for="">Name</label>
+                        <input class="contact__form-input" id="nameInput"  placeholder="Insert your name" type="text">
+                    </div>
+    
+                    <div class="contact__form-div">
+                        <label class="contact__form-tag" for="">Email</label>
+                        <input class="contact__form-input" id="emailInput" placeholder="Insert your email" type="email">
+                    </div>
+    
+                    <div class="contact__form-div contact__form-area">
+                        <label class="contact__form-tag" for="">Message</label>
+                        <textarea class="contact__form-input" name="" id="messageInput" cols="30" rows="10" placeholder="Insert your message"></textarea>
+                    </div>
+                
+                    <div class="contact__button-div">
+                        <input id="sent" class="button contact__form-button" type="submit" value="Sent message">
+                    </div>
+                    
+                </form>
+            </div>            
+            
+        </section>
+
+    </main>
+    
+    <footer class="footer">
+        <div class="footer__info">
+            <p>Developed by Christian Huila  <br>2022 </p>
+        </div>        
+    </footer>
+</body>
+<script src="assets/js/edit-appManager.js" type="module"></script>
+<script src="assets/js/form.js"></script>
+</html>
